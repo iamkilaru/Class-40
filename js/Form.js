@@ -36,6 +36,7 @@ class Form {
     });
     
     this.reset.mousePressed(()=>{
+      Player.updateCAT(0);
       game.update(0);
       player.updateCount(0);
       database.ref("/").child("players").remove();
